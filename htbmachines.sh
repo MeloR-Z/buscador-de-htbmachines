@@ -108,8 +108,8 @@ searchIP(){
 
 searchBySkills(){
 
-maquinas_por_skills=$(cat bundle.js | grep -B 6  "skills:" | grep $1 -B 7 | grep "name:" | awk '{print $2}' | tr -d '"' | tr -d ",")
-maquinas_por_skills_num=$(cat bundle.js | grep -B 6  "skills:" | grep $1 -B 7 | grep "name:" | awk '{print $2}' | tr -d '"' | tr -d "," | wc -l)
+maquinas_por_skills=$(cat bundle.js | grep -B 6  "skills:" | grep "$1" -B 7 | grep "name:" | awk '{print $2}' | tr -d '"' | tr -d ",")
+maquinas_por_skills_num=$(cat bundle.js | grep -B 6  "skills:" | grep "$1" -B 7 | grep "name:" | awk '{print $2}' | tr -d '"' | tr -d "," | wc -l)
 
 if [ "$maquinas_por_skills" ]; then 
 	echo -e ${gray}"Hay un total de:${endC} ${purple}$maquinas_por_skills_num${endC} ${gray}donde se usa la skill: ${endC}${purple}$1${endC}\n "
@@ -298,7 +298,7 @@ searchBy_os_dificultad
 elif [ $m_countet -eq 6 ]; then 
 
 
-searchBySkills $skills
+searchBySkills "$skills"
 
 else
  
