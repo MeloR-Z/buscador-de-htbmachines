@@ -200,7 +200,7 @@ echo $maquinas_por_dificultad_y_os | tr -d '"' | tr -d ',' | tr ' ' '\n' | grep 
 
 
 
-while getopts m:hi:d:us:o: argumentos; do 
+while getopts m:hi:d:us:lo: argumentos; do 
 
 	case $argumentos in
 
