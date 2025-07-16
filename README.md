@@ -3,3 +3,11 @@ Es un herramienta que te permite filtrar maquinas de la web:https://htbmachines.
 
 
 Puede tener algunos errores en comandos de filtrado, en caso de detectar errores, puedes arreglarlo si gustas
+
+
+NOTA: asegurese de neter la herramienta sponge y jsbeautifier descargadas
+
+
+para descargar las herramientas en linux:
+sudo apt install sponge
+pip install jsbeautifier --break-system-packages
