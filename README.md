@@ -9,5 +9,4 @@ NOTA: asegurese de tener la herramienta sponge y jsbeautifier descargadas
 
 
 para descargar las herramientas en linux:
-sudo apt install sponge
-pip install jsbeautifier --break-system-packages
+sudo apt install sponge &&  pip install jsbeautifier --break-system-packages
